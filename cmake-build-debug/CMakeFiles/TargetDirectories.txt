@@ -1,0 +1,3 @@
+C:/Users/Leona/OneDrive/Documente/GitHub/a10-LeonaPopa/cmake-build-debug/CMakeFiles/a10_LeonaPopa.dir
+C:/Users/Leona/OneDrive/Documente/GitHub/a10-LeonaPopa/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Leona/OneDrive/Documente/GitHub/a10-LeonaPopa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
