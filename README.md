@@ -1,3 +1,44 @@
+# Movie Library - University Project
+
+## Overview
+
+This project is a C++ application developed as a university assignment. It features a movie library where users can add, remove, update movies, and manage a watch list. The application includes a graphical user interface (GUI) developed using the Qt framework. Additionally, the project implements undo and redo functionality for various operations using inheritance and polymorphism.
+
+## Features
+
+- **Add, Remove, Update Movies**: Manage a collection of movies with basic CRUD operations.
+- **Undo/Redo Functionality**: Support for undo and redo operations for add, remove, and update actions.
+- **Watch List Management**: Manage a watch list of movies, including viewing and removing movies from the list.
+- **Qt GUI**: A graphical user interface built with Qt, featuring:
+  - **QTableView**: Display the watch list using a table view.
+  - **Undo/Redo Buttons**: Buttons and key combinations (`Ctrl+Z`, `Ctrl+Y`) for undo and redo operations.
+
+## Requirements
+
+1. **Undo/Redo Functionality**:
+   - Implemented for add, remove, and update operations.
+   - Available through GUI buttons and key combinations (`Ctrl+Z` for undo, `Ctrl+Y` for redo).
+
+2. **Watch List Display**:
+   - Display the contents of the watch list using a `QTableView`.
+   - Custom model inherited from `QAbstractTableModel` to manage the data displayed in the table.
+
+## File Structure
+
+- **domain.cpp/h**: Contains the domain classes and their implementations.
+- **exceptions.h**: Defines custom exceptions used in the application.
+- **gui.cpp/h**: Implements the graphical user interface using Qt.
+- **repository.cpp/h**: Manages the storage and retrieval of movie data.
+- **service.cpp/h**: Implements the business logic of the application.
+- **ui.cpp/h**: Handles the user interface logic.
+- **validator.cpp/h**: Validates movie data.
+- **watch_list.cpp/h**: Manages the watch list functionality.
+- **CMakeLists.txt**: Build configuration file for CMake.
+- **README.md**: Project documentation.
+
+
+
+
 # Assignment 10
 
 ## Requirements
@@ -5,15 +46,3 @@
 
 2. Show the contents of the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list` using a table view. You must use the [Qt View/Model](https://doc.qt.io/qt-6/modelview.html) components (`QTableView`). Create your own model – a class which inherits from [`QAbstractTableModel`](https://doc.qt.io/qt-6/qabstracttablemodel.html). This window will be opened from your GUI's main window.
 
-<!--
-## Bonus Possibility [0.1p]
-Add multiple *undo* and *redo* functionality for the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list`. This will be tested through the application's GUI.
-
-
-## Bonus Possibility [0.1p]
-Use [custom Qt delegates](https://doc.qt.io/qt-6/qtwidgets-itemviews-stardelegate-example.html). In one of the columns of the Qt table view that shows the elements of the `adoption list` / **etc...**, display an image of the dog, trench coat or a play button that plays the movie trailer or the tutorial - depending on the problem statement. See the example images below.
-
-![image](https://user-images.githubusercontent.com/25611695/119180503-0bfef700-ba79-11eb-86ae-3a42d41bb437.png)
-![image](https://user-images.githubusercontent.com/25611695/119180582-2507a800-ba79-11eb-921c-22f64a05522b.png)
-
--->
